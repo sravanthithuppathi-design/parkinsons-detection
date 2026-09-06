@@ -1,0 +1,89 @@
+╔══════════════════════════════════════════════════════════════╗
+║         PD DETECT — PARKINSON'S DISEASE VOICE ANALYSIS       ║
+║                  HOW TO USE THIS PROJECT                      ║
+╚══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OPTION 1 — USE THE LIVE WEBSITE (RECOMMENDED - NO SETUP!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Just open this link in any browser:
+  👉  https://pd-detect.vercel.app
+
+  That's it! No installation needed.
+  Works on Chrome, Edge, Firefox, Safari.
+  Works on PC, Mac, and mobile.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OPTION 2 — RUN ON YOUR OWN COMPUTER (Advanced)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Requirements:
+  • Python 3.10 or higher  → https://python.org/downloads
+  • Node.js 18 or higher   → https://nodejs.org/en/download
+
+  Steps:
+  1. Extract this ZIP to any folder (e.g., Desktop)
+  2. Double-click  START_BACKEND.bat   (wait for "Models loaded")
+  3. Double-click  START_FRONTEND.bat  (wait for "ready in...")
+  4. Open browser and go to:  http://localhost:5173
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HOW TO USE THE APP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Wait for green "API Online" dot in top-right corner
+     (First load takes ~30 seconds to wake up)
+
+  2. Click "Start Recording"
+     → Allow microphone when browser asks
+     → Say "Aaaaaah" steadily for 5–10 seconds
+     → Click "Stop Recording"
+
+  3. Click "Analyze Voice"
+     → Wait 10–20 seconds
+     → View your results!
+
+  4. Check the results:
+     • Prediction: Healthy or Parkinson's Detected
+     • Confidence %: How confident the AI is
+     • Acoustic Metrics: Your voice features
+     • Charts: Visual analysis
+     • Download PDF Report button
+
+  5. Visit History tab to see all past analyses
+  6. Visit Dashboard for statistics and charts
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ABOUT THIS PROJECT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  This tool uses AI (Machine Learning) to analyze voice
+  recordings and screen for Parkinson's Disease indicators.
+
+  Technology:
+  • Python backend with FastAPI
+  • scikit-learn + XGBoost machine learning
+  • 68+ acoustic features extracted from your voice
+  • Trained on UCI Parkinson's Dataset (195 clinical samples)
+  • Ensemble model: Random Forest + XGBoost + SVM
+  • Model accuracy: ~92.3%
+  • React frontend with premium dark UI
+
+  ⚠️  IMPORTANT DISCLAIMER:
+  This tool is for RESEARCH and EDUCATIONAL purposes only.
+  It does NOT provide medical diagnoses.
+  Always consult a qualified neurologist for health concerns.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LINKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Live App:   https://pd-detect.vercel.app
+  API:        https://pd-detect-api.onrender.com
+  API Docs:   https://pd-detect-api.onrender.com/docs
+  Source:     https://github.com/sujan7989/pd-detect
